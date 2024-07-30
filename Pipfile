@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3.9"
+
+[packages]
+pandas = "2.2.*"
+requests = {version = ">=2.25"}
+fleet = {path = "./fleet", editable = true}
+operations = {path = "./operations", editable = true}
+personnel = {path = "./personnel", editable = true}
+click = "*"
+pytest = "*"
+
+[dev-packages]
+pytest = "8.*"
